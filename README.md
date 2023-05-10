@@ -5,7 +5,7 @@
 Дана система линейных алгебраических уравнений
 $$ Au = B, $$
 где $A$ — трехдиагональная матрица такая, что
-$$
+<!-- $$
     A = \begin{pmatrix}
         \beta_0 & \alpha_0 & 0 & 0 & 0 & \dots & 0 \\
         \gamma_1 & \beta_1 & \alpha_1 & 0 & 0 & \dots & 0 \\
@@ -16,14 +16,19 @@ $$
         0 & 0 & 0 & 0 & \gamma_{N-1} & \beta_{N-1} & \alpha_{N-1}
     \end{pmatrix},
 $$
-столбцы неизвестных и свободных членов соответственно:
 $$ u = \begin{pmatrix}
         u_0 \\ u_1 \\ \dots \\ u_{N-1}
     \end{pmatrix}, \quad
     B = \begin{pmatrix}
         B_0 \\ B_1 \\ \dots \\ B_{N-1}
-    \end{pmatrix}.
-$$
+    \end{pmatrix},
+$$ -->
+- $\beta_j$ — главная диагональ, $j = \overline{0, N-1}$,
+- $\alpha_j$ — наддиагональ, $j = \overline{0, N-2}$,
+- $\gamma_j$ — поддиагональ, $j = \overline{1, N-1}$,
+
+$u_j$ — столбец неизвестных, $j = \overline{0, N-1}$,
+$B_j$ — столбец свободных членов, $j = \overline{0, N-1}$.
 
 Считаем, что $\gamma_0$ и $\alpha_{N-1}$ равны нулю.
 
